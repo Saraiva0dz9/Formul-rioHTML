@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<title>Formulário</title>
+	</head>
+    <body>
+        <section>
+		    <form action="processa_form.php" method="post">
+			
+			    <fieldset>
+				    <legend>Dados Gerais</legend>
+					
+					<label for="nome">Nome:</label>
+					<input type="text" minlength="3" id="nome" name="nome" required />
+					
+					<label for="data_nascimento">Data de Nascimento:</label>
+					<input type="text" id="data_nascimento" name="data_nascimento" />
+										
+					<label for="cpf">CPF:</label>
+					<input type="text" maxlength="14" minlength="14" id="cpf" name="cpf" required />
+					
+					<label for="tel">Tel. Celular:</label>
+					<input type="text" maxlength="14" id="tel" name="tel" placeholder="(11)99999-9999" required />
+					
+			    </fieldset>
+		
+		        <fieldset>
+				    <legend>Endereço</legend>
+					
+					<label for="tipo_endereço">Tipo:</label>
+					<select id="tipo_endereço" name="tipo_endereço">
+					    <option value="">Selecione</option>
+						<option value="rua">Rua</option>
+						<option value="estrada">Estrada</option>
+						<option value="rodovia">Rodovia</option>
+						<option value="outro">Outro</option>
+					</select>
+
+                    <label for="logadouro_endereço">Logadouro:</label>
+					<input type="text" id="logadouro_endereço" name="logadouro_endereço" />
+					
+				</fieldset>
+
+				<fieldset>
+				    <legend>Gênero</legend>
+					
+					<label for="genero">Gênero:</label>
+					
+					<input type="radio" name="genero" value="Masculino" />
+					<label for="genero">Masculino</label>
+					
+					<input type="radio" name="genero" value="Feminino" />
+					<label for="genero">Feminino</label>
+					
+					<input type="radio" name="genero" value="Prefiro_não_dizer" />
+					<label for="genero">Prefeiro não dizer</label>
+				
+				</fieldset>
+				
+				<fieldset>
+				    <legend>Fale Conosco</legend>
+					
+					<label for="msg">Mensagem:</label>
+					<textarea id="msg" name="msg"></textarea>
+					
+					<button type="submit">Enviar mensagem</button>
+					<button type="reset">Limpar o formulário</button>
+				</fieldset>	
+					
+		</section>
+	</body>
+</html>	
+					
+					
+					
+					
